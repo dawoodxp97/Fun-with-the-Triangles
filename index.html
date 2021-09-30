@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with the Triangles</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/red-triangle-pointed-up_1f53a.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo_text">🚀 Fun with Triangles 😅</h1>
+      <a href="index.html" class="item-active">Is Triangle?</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="area.html">Area</a>
+    </nav>
+    <div class="container">
+      <iframe
+        frameborder="0"
+        class="animie"
+        src="https://embed.lottiefiles.com/animation/50095"
+      ></iframe>
+      <h1 class="heading">Is Triangle ?</h1>
+      <div class="angle-container">
+        <form id="submit-form" class="input-container">
+          <label for="angle-1">Angle 1(in degrees)</label>
+          <input required id="angle-1" type="number" class="angle-input" />
+          <label for="angle-2">Angle 2(in degrees)</label>
+          <input required id="angle-2" type="number" class="angle-input" />
+          <label for="angle-3">Angle 3(in degrees)</label>
+          <input required id="angle-3" type="number" class="angle-input" />
+          <input type="submit" class="btn" />
+        </form>
+      </div>
+      <div class="result" id="output"></div>
+    </div>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

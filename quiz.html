@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with the Triangles</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/red-triangle-pointed-up_1f53a.png"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo_text">Fun with Triangles</h1>
+      <a href="index.html">Is Triangle?</a>
+      <a href="quiz.html" class="item-active">Quiz</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="area.html">Area</a>
+    </nav>
+    <div class="logo">
+      <img src="assets/animation_300_ku6sgo2l.gif" alt="animie" />
+    </div>
+
+    <h1 class="heading">Triangle Quiz</h1>
+    <form id="is-submit" class="container quiz-form">
+      <div class="quiz-container">
+        <p>
+          What is the third angle for the triangle where angle1 = 45° and angle2
+          = 45°?
+        </p>
+        <label>
+          <input required type="radio" name="options" value="45°" />
+          45°
+        </label>
+        <label>
+          <input required type="radio" name="options" value="60°" />
+          60°
+        </label>
+        <label>
+          <input required type="radio" name="options" value="90°" />
+          90°
+        </label>
+      </div>
+      <div class="quiz-container">
+        <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+        <label>
+          <input required type="radio" name="option1" value="obtuse" />
+          obtuse
+        </label>
+        <label>
+          <input required type="radio" name="option1" value="acute" />
+          acute
+        </label>
+        <label>
+          <input required type="radio" name="option1" value="right angled" />
+          right angled
+        </label>
+      </div>
+      <div class="quiz-container">
+        <p>The triangle that has all its sides equal in length is known as ?</p>
+        <label>
+          <input required type="radio" name="option2" value="equilateral" />
+          equilateral
+        </label>
+        <label>
+          <input required type="radio" name="option2" value="isosceles" />
+          isosceles
+        </label>
+        <label>
+          <input required type="radio" name="option2" value="scalene" />
+          scalene
+        </label>
+      </div>
+      <div class="quiz-container">
+        <p>
+          The triangle that has two equal sides. Also, the two angles opposite
+          to the two equal sides are equal is known as ?
+        </p>
+        <label>
+          <input required type="radio" name="option3" value="equilateral" />
+          equilateral
+        </label>
+        <label>
+          <input required type="radio" name="option3" value="scalene" />
+          scalene
+        </label>
+        <label>
+          <input required type="radio" name="option3" value="isosceles" />
+          isosceles
+        </label>
+      </div>
+      <button id="submit-btn" class="btn" type="submit">Submit Form</button>
+    </form>
+    <h2 id="output" class="output"></h2>
+    <script src="/js/quiz.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/red-triangle-pointed-up_1f53a.png"
+    />
+    <title>Area</title>
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo_text">Fun with Triangles</h1>
+      <a href="index.html">Is Triangle?</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="hypotenuse.html">Hypotenuse</a>
+      <a href="area.html" class="item-active">Area</a>
+    </nav>
+    <div class="logo">
+      <img src="assets/animation_200_ku6t2nhv.gif" alt="animie" />
+    </div>
+    <h1 class="heading">Check Area Of a Triangle</h1>
+    <h2 class="formula">Area of a triangle = 1/2(Base * Height)</h2>
+    <div class="angle-container">
+      <form id="is-submit">
+      <div class="input-container">
+        <label for="base"
+          >Base(in cm)
+          <input  type="number" required class="area-input" id="base" />
+        </label>
+      </div>
+      <div class="input-container">
+        <label for="height"
+          >Height(in cm)
+          <input type="number" required class="area-input" id="height" />
+        </label>
+      </div>
+      <button id="area-btn" type="submit" class="btn">Check Area</button>
+    </div>
+  </form>
+    <h2 id="area-output" class="output"></h2>
+    <script src="/js/area.js"></script>
+  </body>
+</html>

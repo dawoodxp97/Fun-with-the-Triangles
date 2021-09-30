@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #00695c;
+  --background-color: #1f2937;
+  --text-color: #f9fafb;
+  --body-font: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+}
+
+body {
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  /* color: var(--primary-color); */
+  margin-bottom: 2rem;
+}
+
+.quiz-container {
+  padding: 2rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.quiz-container p {
+  margin-bottom: 1rem;
+}
+
+.quiz-container label {
+  margin-right: 0.5rem;
+}
+
+.angle-container {
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  padding: 0.5rem;
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.25rem;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.output {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.input-container {
+  margin: 1rem 0;
+}
+
+.input-container input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 97%;
+  margin: 0.5rem 1rem 1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+.result {
+  padding-left: 11rem;
+}
+.formula {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+nav {
+  background: var(--primary-color);
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+}
+.logo_text {
+  margin: 0;
+  display: inline;
+  font-family: var(--body-font);
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.5rem;
+  font-weight: 1000;
+  font-size: 1rem;
+  float: right;
+}
+
+.item-active {
+  border-bottom: 2px solid;
+  font-weight: bold;
+}
+
+.animie {
+  pointer-events: none;
+  margin-left: 12rem;
+}
+.logo {
+  height: 10rem;
+  width: 10rem;
+  margin-left: 37rem;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(250, 12%, 48%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(250, 12%, 36%);
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(233, 14%, 35%);
+}
+
+@media only screen and (min-width: 600px) {
+  .angle-container,
+  .container,
+  .formula {
+    width: 50%;
+  }
+}
